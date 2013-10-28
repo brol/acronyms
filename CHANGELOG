@@ -1,0 +1,40 @@
+Acronyms 1.7 - 2013-10-23
+===========================================================
+* enregistrement des paramètres dans la page de gestion des acronymes (BLR)
+
+
+Acronyms 1.2 - 2013-08-04
+===========================================================
+* ajout widget
+* aide intégrée
+* modifications traduction
+
+
+Acronyms 1.1 - 2013-07-31
+===========================================================
+* http://lab.dotclear.org/ticket/262
+* fermeture des fichiers php
+* mise à jour de head dans tpl
+* compatibilité php 5.3
+
+
+Acronyms 1.0 - 2008-12-10
+===========================================================
+* added acronyms public page
+* added acronyms settings on blog settings page
+
+
+Acronyms 0.5 - 2008-12-09
+===========================================================
+* added acronyms buton to the toolbar
+
+
+Acronyms 0.2 - 2008-12-08
+===========================================================
+* added "acronyms" permission
+* XHTML compliance
+
+
+Acronyms 0.1 - 2008-12-07
+===========================================================
+* first public release
