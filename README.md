@@ -5,7 +5,7 @@ acronyms est un plugin pour [Dotclear] (http://fr.dotclear.org/).
 
 Ce plugin ajoute un widget et une page publique.
 
-Voir [le wiki] (https://github.com/blr21560/LastCommentExtended/wiki) pour plus d'informations.
+Voir [le wiki] (https://github.com/brol/acronyms/wiki) pour plus d'informations.
 
 
 Compatibilité
