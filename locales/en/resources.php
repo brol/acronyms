@@ -14,5 +14,3 @@ if (!isset($__resources['help']['acronyms']))
 {
 	$__resources['help']['acronyms'] = dirname(__FILE__).'/help/acronyms.html';
 }
-
-?>
