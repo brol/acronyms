@@ -9,7 +9,7 @@
 </tpl:Block>
 
 <tpl:Block name="dc-entry">
-  <meta name="dc.title" lang="{{tpl:BlogLanguage}}" content="{{tpl:lang Acronyms}} - {{tpl:BlogName encode_html="1"}}" />
+  <meta property="dc.title" lang="{{tpl:BlogLanguage}}" content="{{tpl:lang Acronyms}} - {{tpl:BlogName encode_html="1"}}" />
   <meta property="dc.language" content="{{tpl:BlogLanguage}}" />
 </tpl:Block>
 
@@ -32,7 +32,7 @@
     <div class="content-inner post">
       <tpl:Acronyms>
       <tpl:AcronymsHeader><div class="acronymslist"></tpl:AcronymsHeader>
-        <p><acronym title="{{tpl:AcronymTitle}}">{{tpl:Acronym}}</acronym><br />
+        <p><abbr title="{{tpl:AcronymTitle}}">{{tpl:Acronym}}</abbr><br />
         {{tpl:AcronymTitle}}</p>
       <tpl:AcronymsFooter></div></tpl:AcronymsFooter>
       </tpl:Acronyms>

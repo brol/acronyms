@@ -18,7 +18,7 @@ jsToolBar.prototype.elements.acronyms.fn.xhtml = function() {
 		if (str == '') { window.alert(dotclear.msg.no_selection); return ''; }
 		var title = window.prompt(jsToolBar.prototype.elements.acronyms.msg_title);
 		var lang = window.prompt(jsToolBar.prototype.elements.acronyms.msg_lang);
-		return '<acronym' + (title ? ' title="'+title+'"' : '') + (lang ? ' lang="'+lang+'"' : '') + '>' + str + '</acronym>';
+		return '<abbr' + (title ? ' title="'+title+'"' : '') + (lang ? ' lang="'+lang+'"' : '') + '>' + str + '</abbr>';
 	});
 };
 jsToolBar.prototype.elements.acronyms.fn.wysiwyg = function() {
