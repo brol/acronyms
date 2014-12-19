@@ -1,0 +1,41 @@
+{{tpl:extends parent="__layout.html"}}
+
+<tpl:Block name="head-title">
+  <title>{{tpl:lang Acronyms}} - {{tpl:BlogName encode_html="1"}}</title>
+</tpl:Block>
+
+<tpl:Block name="meta-robots">
+  <meta name="ROBOTS" content="{{tpl:BlogMetaRobots robots="NOINDEX,NOARCHIVE"}}" />
+</tpl:Block>
+
+<tpl:Block name="dc-entry">
+  <meta name="dc.title" lang="{{tpl:BlogLanguage}}" content="{{tpl:lang Acronyms}} - {{tpl:BlogName encode_html="1"}}" />
+  <meta property="dc.language" content="{{tpl:BlogLanguage}}" />
+</tpl:Block>
+
+<tpl:Block name="head-linkrel">
+  <link rel="top" href="{{tpl:BlogURL}}" title="{{tpl:lang Home}}" />
+  <link rel="contents" title="{{tpl:lang Archives}}" href="{{tpl:BlogArchiveURL}}" />
+  <tpl:Categories>
+  <link rel="section" href="{{tpl:CategoryURL}}" title="{{tpl:CategoryTitle encode_html="1"}}" />
+  </tpl:Categories>
+  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{tpl:BlogFeedURL type="atom"}}" />
+</tpl:Block>
+
+<tpl:Block name="body-tag"><body class="dc-acronyms"></tpl:Block>
+
+<tpl:Block name="main-content">
+    <div id="content-info">
+      <h2>{{tpl:lang List of Acronyms}}</h2>
+    </div>
+
+    <div class="content-inner post">
+      <tpl:Acronyms>
+      <tpl:AcronymsHeader><div class="acronymslist"></tpl:AcronymsHeader>
+        <p><acronym title="{{tpl:AcronymTitle}}">{{tpl:Acronym}}</acronym><br />
+        {{tpl:AcronymTitle}}</p>
+      <tpl:AcronymsFooter></div></tpl:AcronymsFooter>
+      </tpl:Acronyms>
+    </div>
+
+</tpl:Block>

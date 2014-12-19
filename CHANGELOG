@@ -1,11 +1,17 @@
-Acronyms 1.6.1 - 2014-01-27
+Acronyms 1.7 - 14-12-2014 Pierre Van Glabeke
 ===========================================================
-* modification tpl (ajout class post) (brol)
+* compatibilité dc2.7
+
+
+Acronyms 1.6.1 - 2014-01-27 Pierre Van Glabeke
+===========================================================
+* modification tpl (ajout class post)
+
 
 Acronyms 1.6 - 2013-11-11
 ===========================================================
 * enregistrement des paramètres dans la page de gestion des acronymes (BLR)
-* modifications diverses (brol)
+* modifications diverses (Pierre Van Glabeke)
 
 
 Acronyms 1.2 - 2013-08-04

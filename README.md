@@ -1,4 +1,4 @@
-acronyms
+Acronyms
 ========
 
 acronyms est un plugin pour [Dotclear] (http://fr.dotclear.org/).
@@ -6,12 +6,6 @@ acronyms est un plugin pour [Dotclear] (http://fr.dotclear.org/).
 Ce plugin ajoute un widget et une page publique.
 
 Voir [le wiki] (https://github.com/brol/acronyms/wiki) pour plus d'informations.
-
-
-Compatibilité
-============
-
-Ce plugin a été testé avec les versions 2.5 et 2.6 de [Dotclear] (http://fr.dotclear.org/).
 
 Auteurs
 =======

@@ -28,30 +28,22 @@ class widgetsAcronyms
 	{
 		$core = $GLOBALS['core'];
 		$coreUrl = $core->url;
+
+		if ($w->offline)
+			return;
 		
 		if (($w->homeonly === 1 && $coreUrl->type !== 'default') ||
 			($w->homeonly === 2 && $coreUrl->type === 'default')) {
 			return;
 		}
-		$content_only = $w->content_only;
-		$wclass = $w->class;
-		$wtitle = $w->title;
-		
-		$class = $title = $divB = $divE = '';
-		
-		if ( $wclass ) {
-			$class = html::escapeHTML($wclass);
-		}
-		if ( $wtitle ) {
-			$title = '<h2>'.html::escapeHTML($wtitle).'</h2>';
-		}
-		if ( !$content_only) {
-			$divB = '<div class="acronyms '.$class.'">';
-			$divE = '</div>';
-		}
-		return	$divB.$title.'<ul><li><strong><a href="'.$core->blog->url.
-				$coreUrl->getBase("acronyms").'">'.	__('List of Acronyms').
-				'</a></strong></li></ul>'.$divE;
+
+		$res =
+		($w->title ? $w->renderTitle(html::escapeHTML($w->title)) : '').
+		'<p><a href="'.$core->blog->url.
+		$coreUrl->getBase("acronyms").'">'.	__('List of Acronyms').
+		'</a></p>';
+
+		return $w->renderDiv($w->content_only,'acronyms '.$w->class,'',$res);
 	}
 
 	public static function initWidgets($w) {
@@ -68,5 +60,6 @@ class widgetsAcronyms
 		);
 		$acro->setting('content_only',__('Content only'),0,'check');
 		$acro->setting('class',__('CSS class:'),'');
+		$acro->setting('offline',__('Offline'),0,'check');
 	}
 }
