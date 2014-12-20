@@ -32,8 +32,8 @@ class widgetsAcronyms
 		if ($w->offline)
 			return;
 		
-		if (($w->homeonly === 1 && $coreUrl->type !== 'default') ||
-			($w->homeonly === 2 && $coreUrl->type === 'default')) {
+		if (($w->homeonly == 1 && $core->url->type != 'default') ||
+			($w->homeonly == 2 && $core->url->type == 'default')) {
 			return;
 		}
 
