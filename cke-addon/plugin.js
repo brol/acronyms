@@ -9,7 +9,7 @@ CKEDITOR.plugins.add('acronym', {
 
 		editor.ui.addButton("Acronym", {
 			label: jsToolBar.prototype.elements.acronyms.title,
-			icon: this.path+'icons/icon.png',
+			icon: this.path.replace('cke-addon/', '')+'icon.png',
 			command: 'acronymCommand'
 		});
 	}
