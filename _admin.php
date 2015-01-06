@@ -10,7 +10,7 @@
 #
 # -- END LICENSE BLOCK ------------------------------------
 if (!defined('DC_CONTEXT_ADMIN')) {
-	return; 
+	return;
 }
 
 require dirname(__FILE__).'/_widgets.php';
@@ -36,6 +36,10 @@ class acronymsAdminBehaviors
 {
 	public static function ckeditorExtraPlugins(ArrayObject $extraPlugins, $context)
 	{
+        if ($context!='post') {
+            return;
+        }
+
 		$ns = $GLOBALS['core']->blog->settings->addNamespace('acronyms');
 		if ($ns->get('acronyms_button_enabled')) {
 			$extraPlugins[] = array(
