@@ -30,9 +30,22 @@ $core->addBehavior('adminPageHeaders',array('acronymsAdminBehaviors','jsLoad'));
 $core->addBehavior('adminRelatedHeaders',array('acronymsAdminBehaviors','jsLoad'));
 $core->addBehavior('adminDashboardHeaders',array('acronymsAdminBehaviors','jsLoad'));
 
+$core->addBehavior('ckeditorExtraPlugins', array('acronymsAdminBehaviors', 'ckeditorExtraPlugins'));
 
 class acronymsAdminBehaviors
 {
+	public static function ckeditorExtraPlugins(ArrayObject $extraPlugins, $context)
+	{
+		$ns = $GLOBALS['core']->blog->settings->addNamespace('acronyms');
+		if ($ns->get('acronyms_button_enabled')) {
+			$extraPlugins[] = array(
+				'name' => 'acronym',
+				'button' => 'Acronym',
+				'url' => DC_ADMIN_URL.'index.php?pf=acronyms/cke-addon/'
+			);
+		}
+	}
+
 	public static function coreInitWikiPost($wiki2xhtml)
 	{
 		$acronyms = new dcAcronyms($GLOBALS['core']);
