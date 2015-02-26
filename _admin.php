@@ -10,7 +10,7 @@
 #
 # -- END LICENSE BLOCK ------------------------------------
 if (!defined('DC_CONTEXT_ADMIN')) {
-	return; 
+	return;
 }
 
 require dirname(__FILE__).'/_widgets.php';
@@ -29,7 +29,6 @@ $core->addBehavior('adminPostHeaders',array('acronymsAdminBehaviors','jsLoad'));
 $core->addBehavior('adminPageHeaders',array('acronymsAdminBehaviors','jsLoad'));
 $core->addBehavior('adminRelatedHeaders',array('acronymsAdminBehaviors','jsLoad'));
 $core->addBehavior('adminDashboardHeaders',array('acronymsAdminBehaviors','jsLoad'));
-
 
 class acronymsAdminBehaviors
 {

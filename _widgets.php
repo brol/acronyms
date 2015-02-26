@@ -39,15 +39,17 @@ class widgetsAcronyms
 
 		$res =
 		($w->title ? $w->renderTitle(html::escapeHTML($w->title)) : '').
-		'<p><a href="'.$core->blog->url.
+		'<ul><li><a href="'.$core->blog->url.
 		$coreUrl->getBase("acronyms").'">'.	__('List of Acronyms').
-		'</a></p>';
+		'</a></li></ul>';
 
 		return $w->renderDiv($w->content_only,'acronyms '.$w->class,'',$res);
 	}
 
 	public static function initWidgets($w) {
-		$w->create('acronyms',__('List of Acronyms'),array('widgetsAcronyms','acronymsWidgets'));
+		$w->create('acronyms',__('List of Acronyms'),array('widgetsAcronyms','acronymsWidgets'),
+			null,
+			__('Link to the page of acronyms'));
 		$acro = $w->acronyms;
 		
 		$acro->setting('title',__('Title:'),__('List of Acronyms'),'text');

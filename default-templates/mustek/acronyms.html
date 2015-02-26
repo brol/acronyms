@@ -17,7 +17,8 @@
   <meta property="dc.format" content="text/html" />
 
   <link rel="top" href="{{tpl:BlogURL}}" title="{{tpl:lang Home}}" />
-  <link rel="contents" href="{{tpl:BlogArchiveURL}}" title="{{tpl:lang Archives}}" />
+  <link rel="contents" title="{{tpl:lang Archives}}" href="{{tpl:BlogArchiveURL}}" />
+  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{tpl:BlogFeedURL type="atom"}}" />
 
   {{tpl:include src="_head.html"}}
 </head>
@@ -28,7 +29,7 @@
 
 <div id="wrapper">
 
-<div id="main">
+<div id="main" role="main">
   <div id="content">
     <div id="content-info">
       <h2>{{tpl:lang List of Acronyms}}</h2>
@@ -46,7 +47,7 @@
   </div><!-- #content -->
 </div><!-- #main -->
 
-<div id="sidebar">
+<div id="sidebar" role="complementary">
   <div id="blognav">
     {{tpl:Widgets type="nav"}}
   </div> <!-- End #blognav -->

@@ -81,3 +81,6 @@ msgstr "Liste des acronymes"
 
 msgid "Acronyms parameters successfully updated."
 msgstr "La mise à jour des paramètres a réussi."
+
+msgid "Link to the page of acronyms"
+msgstr "Lien vers la page des acronymes"
