@@ -1,67 +1,49 @@
-Acronyms 1.7.3 - 17-11-2016 Pierre Van Glabeke
-===========================================================
+v1.7.4 - 06-11-2017 Pierre Van Glabeke
+* modifs html
+* localisation
+
+v1.7.3 - 17-11-2016 Pierre Van Glabeke
 * intégration modifs nikrou (dckeeditor)
 
-Acronyms 1.7.2 - 26-02-2015 Pierre Van Glabeke
-===========================================================
+v1.7.2 - 26-02-2015 Pierre Van Glabeke
 * code sécurité class
 * bug + modif affichage widget
 * modif html mustek
 
-
-Acronyms 1.7.1 - 19-12-2014 Pierre Van Glabeke
-===========================================================
+v1.7.1 - 19-12-2014 Pierre Van Glabeke
 * <abbr> remplace <acronym>
 
-
-Acronyms 1.7 - 14-12-2014 Pierre Van Glabeke
-===========================================================
+v1.7 - 14-12-2014 Pierre Van Glabeke
 * compatibilité dc2.7
 
-
-Acronyms 1.6.1 - 2014-01-27 Pierre Van Glabeke
-===========================================================
+v1.6.1 - 2014-01-27 Pierre Van Glabeke
 * modification tpl (ajout class post)
 
-
-Acronyms 1.6 - 2013-11-11
-===========================================================
+v1.6 - 2013-11-11
 * enregistrement des paramètres dans la page de gestion des acronymes (BLR)
 * modifications diverses (Pierre Van Glabeke)
 
-
-Acronyms 1.2 - 2013-08-04
-===========================================================
+v1.2 - 2013-08-04
 * ajout widget
 * aide intégrée
 * modifications traduction
 
-
-Acronyms 1.1 - 2013-07-31
-===========================================================
+v1.1 - 2013-07-31
 * http://lab.dotclear.org/ticket/262
 * fermeture des fichiers php
 * mise à jour de head dans tpl
 * compatibilité php 5.3
 
-
-Acronyms 1.0 - 2008-12-10
-===========================================================
+v1.0 - 2008-12-10
 * added acronyms public page
 * added acronyms settings on blog settings page
 
-
-Acronyms 0.5 - 2008-12-09
-===========================================================
+v0.5 - 2008-12-09
 * added acronyms buton to the toolbar
 
-
-Acronyms 0.2 - 2008-12-08
-===========================================================
+v0.2 - 2008-12-08
 * added "acronyms" permission
 * XHTML compliance
 
-
-Acronyms 0.1 - 2008-12-07
-===========================================================
+v0.1 - 2008-12-07
 * first public release

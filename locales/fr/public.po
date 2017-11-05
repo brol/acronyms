@@ -1,0 +1,31 @@
+# Language: Français
+# Module: acronyms - 1.7.3
+# Date: 2017-11-05 23:01:22
+# Translated with translater 2017.05.10
+
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: acronyms 1.7.3\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2017-11-05T23:01:22+00:00\n"
+"Last-Translator: brol\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: default-templates/currywurst/acronyms.html:4
+#: default-templates/mustek/acronyms.html:4
+msgid "Acronyms"
+msgstr "Acronymes"
+
+#: default-templates/currywurst/acronyms.html:19
+#: default-templates/mustek/acronyms.html:19
+msgid "List of Acronyms"
+msgstr "Liste des acronymes"
+
+#: _widgets.php:52
+msgid "Link to the page of acronyms"
+msgstr "Lien vers la page des acronymes"
+

@@ -15,7 +15,7 @@ if (!defined('DC_RC_PATH')) {
 
 require dirname(__FILE__).'/_widgets.php';
 
-l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/main');
+l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/public');
 
 $tpl = $core->tpl;
 $tpl->addBlock('Acronyms',array('tplAcronyms','Acronyms'));

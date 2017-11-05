@@ -1,34 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{tpl:BlogLanguage}}">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="ROBOTS" content="{{tpl:BlogMetaRobots robots="NOINDEX,NOARCHIVE"}}" />
+{{tpl:extends parent="__layout.html"}}
 
-  <title>{{tpl:lang Acronyms}} - {{tpl:BlogName encode_html="1"}}</title>
-  <meta name="copyright" content="{{tpl:BlogCopyrightNotice encode_html="1"}}" />
-  <meta name="author" content="{{tpl:BlogEditor encode_html="1"}}" />
+<tpl:Block name="head-title">
+	<title>{{tpl:lang Acronyms}} - {{tpl:BlogName encode_html="1"}}</title>
+</tpl:Block>
 
-  <meta property="dc.title" lang="{{tpl:BlogLanguage}}" content="{{tpl:lang Acronyms}} - {{tpl:BlogName encode_html="1"}}" />
-  <meta property="dc.language" content="{{tpl:BlogLanguage}}" />
-  <meta property="dc.publisher" content="{{tpl:BlogEditor encode_html="1"}}" />
-  <meta property="dc.rights" content="{{tpl:BlogCopyrightNotice encode_html="1"}}" />
-  <meta property="dc.type" content="text" />
-  <meta property="dc.format" content="text/html" />
+<tpl:Block name="meta-robots">
+	<meta name="ROBOTS" content="{{tpl:BlogMetaRobots robots="NOINDEX,NOARCHIVE"}}" />
+</tpl:Block>
 
-  <link rel="contents" title="{{tpl:lang Archives}}" href="{{tpl:BlogArchiveURL}}" />
-  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{tpl:BlogFeedURL type="atom"}}" />
+<tpl:Block name="head-linkrel">
+	<link rel="contents" title="{{tpl:lang Archives}}" href="{{tpl:BlogArchiveURL}}" />
+</tpl:Block>
 
-  {{tpl:include src="_head.html"}}
-</head>
+<tpl:Block name="body-tag"><body class="dc-acronyms"></tpl:Block>
 
-<body class="dc-acronyms">
-<div id="page">
-{{tpl:include src="_top.html"}}
-
-<div id="wrapper">
-
-<div id="main" role="main">
-  <div id="content">
+<tpl:Block name="main-content">
     <div id="content-info">
       <h2>{{tpl:lang List of Acronyms}}</h2>
     </div>
@@ -41,23 +27,4 @@
       <tpl:AcronymsFooter></div></tpl:AcronymsFooter>
       </tpl:Acronyms>
     </div>
-
-  </div><!-- #content -->
-</div><!-- #main -->
-
-<div id="sidebar" role="complementary">
-  <div id="blognav">
-    {{tpl:Widgets type="nav"}}
-  </div> <!-- End #blognav -->
-
-  <div id="blogextra">
-    {{tpl:Widgets type="extra"}}
-  </div> <!-- End #blogextra -->
-</div>
-
-</div> <!-- End #wrapper -->
-
-{{tpl:include src="_footer.html"}}
-</div> <!-- End #page -->
-</body>
-</html>
+</tpl:Block>
