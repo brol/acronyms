@@ -23,6 +23,7 @@ $tpl->addBlock('AcronymsHeader',array('tplAcronyms','AcronymsHeader'));
 $tpl->addBlock('AcronymsFooter',array('tplAcronyms','AcronymsFooter'));
 $tpl->addValue('Acronym',array('tplAcronyms','Acronym'));
 $tpl->addValue('AcronymTitle',array('tplAcronyms','AcronymTitle'));
+$core->addBehavior('publicBreadcrumb',array('extAcronyms','publicBreadcrumb'));
 
 /*******************************************
  * tplAcronyms
@@ -94,3 +95,13 @@ class acronymsURL extends dcUrlHandlers
         }
 
 } 
+
+class extAcronyms
+{
+  public static function publicBreadcrumb($context,$separator)
+  {
+    if ($context == 'acronyms') {
+      return __('List of Acronyms');
+    }
+  }
+}
