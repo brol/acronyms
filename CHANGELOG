@@ -14,7 +14,7 @@ v1.7.2 - 26-02-2015 Pierre Van Glabeke
 * modif html mustek
 
 v1.7.1 - 19-12-2014 Pierre Van Glabeke
-* <abbr> remplace <acronym>
+* <abbr> remplace <acronym> déprécié
 
 v1.7 - 14-12-2014 Pierre Van Glabeke
 * compatibilité dc2.7
