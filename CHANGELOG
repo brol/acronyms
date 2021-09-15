@@ -1,3 +1,7 @@
+v1.7.6 - 15-09-2021 Pierre Van Glabeke
+* correction bug affichage avec dc2.19
+* dc2.19 requis
+
 v1.7.5 - 12-02-2018 Pierre Van Glabeke
 * ajout code pour breadcrumb
 
@@ -14,7 +18,7 @@ v1.7.2 - 26-02-2015 Pierre Van Glabeke
 * modif html mustek
 
 v1.7.1 - 19-12-2014 Pierre Van Glabeke
-* <abbr> remplace <acronym> déprécié
+* <abbr> remplace <acronym>
 
 v1.7 - 14-12-2014 Pierre Van Glabeke
 * compatibilité dc2.7
