@@ -163,7 +163,7 @@ if ($core->blog->settings->acronyms->acronyms_public_enabled) {
 			echo
 			'<p class="field">'."\n".
 			'<label for="acronym_'.$i.'"><acronym title="'.$v.'">'.html::escapeHTML($k).'</acronym></label>'."\n".
-			form::field(['p_acronyms['.$k.']','acronym_'.$i],60,'20',html::escapeHTML($v))."\n".
+			form::field(['p_acronyms['.$k.']','acronym_'.$i],60,'200',html::escapeHTML($v))."\n".
 			'</p>'."\n\n";
 
 			++$i;
@@ -183,10 +183,10 @@ if ($core->blog->settings->acronyms->acronyms_public_enabled) {
 		<h4><?php echo __('Add an acronym'); ?></h4>
 
 		<p class="acroleft"><label for="a_acro" class="required"><abbr title="'.__('Required field').'">*</abbr> <?php echo __('Acronym'); ?></label>
-		<?php echo form::field('a_acro',10,'20',$a_acro,'',''); ?></p>
+		<?php echo form::field('a_acro',10,'200',$a_acro,'',''); ?></p>
 
 		<p class="acroright"><label for="a_title" class="required"><abbr title="'.__('Required field').'">*</abbr> <?php echo __('Entitled'); ?></label>
-		<?php echo form::field('a_title',60,'20',$a_title,'',''); ?></p>
+		<?php echo form::field('a_title',60,'200',$a_title,'',''); ?></p>
 
 	</div>
 	<p class="clear"><?php echo form::hidden('p_add', '1');
