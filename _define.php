@@ -14,16 +14,15 @@ if (!defined('DC_RC_PATH')) {
 }
 
 $this->registerModule(
-	/* Name */				  'acronyms',
-	/* Description*/		'Add, remove and modify acronyms for the wiki syntax',
-	/* Author */			  'Vincent Garnier, Pierre Van Glabeke, Bernard Le Roux',
-	/* Version */			  '1.7.6',
-	/* Properties */
-	array(
-		'permissions' => 'usage,contentadmin',
-		'type' => 'plugin',
-		'dc_min' => '2.19',
-		'support' => 'http://forum.dotclear.org/viewtopic.php?pid=323174#p323174',
-		'details' => 'http://plugins.dotaddict.org/dc2/details/acronyms'
-		)
+    'acronyms',
+    'Add, remove and modify acronyms for the wiki syntax',
+    'Vincent Garnier, Pierre Van Glabeke, Bernard Le Roux',
+    '1.7.7',
+    [
+        'requires' => [['core', '2.19']],
+        'permissions' => 'usage,contentadmin',
+        'type' => 'plugin',
+        'support' => 'http://forum.dotclear.org/viewtopic.php?pid=323174#p323174',
+        'details' => 'http://plugins.dotaddict.org/dc2/details/acronyms'
+    ]
 );
